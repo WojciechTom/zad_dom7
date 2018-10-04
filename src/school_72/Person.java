@@ -9,13 +9,7 @@ public class Person {
     public Person(String firstName, String lastName, int age, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
-
-        if (age > 0) {
-            this.age = age;
-        } else {
-            this.age = 0;
-        }
-
+        this.setAge(age);
         this.email = email;
     }
 
